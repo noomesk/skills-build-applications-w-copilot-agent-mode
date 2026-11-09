@@ -47,3 +47,4 @@ Record the commands you run and what each failure means.
 - Frontend command: `npm test --prefix octofit-tracker/frontend` checks rendered API data and loading, empty, and error states.
 - Backend build command: `npm run build --prefix octofit-tracker/backend` type-checks the Express and Mongoose implementation.
 - Frontend build command: `npm run build --prefix octofit-tracker/frontend` type-checks and bundles the Vite application.
+- Initial baseline: Backend tests have 8 expected failures across the four schemas and four API capabilities; the idempotent seed test passes. Frontend tests fail because the capability views are still placeholders and do not render API data or the required states.
